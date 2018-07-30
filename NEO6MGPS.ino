@@ -12,15 +12,15 @@
 /*********************
  * VCC to 5V
  * GND to GND
- * 4 to GPS Module RX
- * 3 to GPS Module TX
+ * 3 to GPS Module RX
+ * 4 to GPS Module TX
  * Default Baud Rate: 9600 bps
  *********************/
 
 #include <SoftwareSerial.h>
 #include <TinyGPS.h>
 
-SoftwareSerial mySerial(4, 3); // RX, TX
+SoftwareSerial mySerial(4, 3); // TX, RX
 TinyGPS gps;
 
 void gpsdump(TinyGPS &gps);
